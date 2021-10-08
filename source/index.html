@@ -1,13 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="ru">
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>HTML Academy: Веломагазин преподобный MOON</title>
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="./fonts/open-sans-v26-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/open-sans-v26-latin_cyrillic-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="./fonts/open-sans-v26-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/open-sans-v26-latin_cyrillic-700.woff" as="font" type="font/woff" crossorigin>
 </head>
-<body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+
+<body class="page-body">
+  <header class="page-header">
+    <div class="page-header__logo-container">
+      <a class="page-header__logo" href="#">
+        <svg class="page-header__logo-img" width="57" height="22" aria-label="Логотип">
+          <use xlink:href="img/sprite.svg#logo-way"></use>
+        </svg>
+      </a>
+    </div>
+    <nav class="main-nav mobile-menu">
+      <button class="main-nav__mobile-menu mobile-menu__button mobile-menu__button--active" type="button"
+        aria-label="Открыть/Закрыть меню сайта">
+        <span class="mobile-menu__element"></span>
+        <span class="mobile-menu__element"></span>
+        <span class="mobile-menu__element"></span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list mobile-menu__elements mobile-menu__elements--active">
+          <li class="main-nav__item">
+            <a class="main-nav__item-content main-nav__item-content--active" href="#">О нас</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-content" href="#species">Виды велосипедов</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-content" href="#video">Видео про велосипеды</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-content" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__address">
+      <h3>Как нас найти?</h3>
+      <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+      <picture>
+        <source type="image/webp" media="(min-width: 1024px)"
+          srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 767px)"
+          srcset="img/tablet/map-tablet@1x.webp 1x, img/tablet/map-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/mobile/map-mobile@1x.webp 1x, img/mobile/map-mobile@2x.webp 2x">
+
+        <source media="(min-width: 1024px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+        <source media="(min-width: 767px)" srcset="img/tablet/map-tablet@1x.jpg 1x, img/tablet/map-tablet@1x.jpg 2x">
+
+        <img src="/img/mobile/map-mobile@1x.jpg"
+          srcset="/img/mobile/map-mobile@1x.jpg 1x, /img/mobile/map-mobile@2x.jpg 2x" width="320" height="250"
+          alt="Магазин Moon на карте города">
+      </picture>
+    </div>
+    <div class="page-footer__connection">
+      <ul class="page-footer__connection-list">
+
+        <li class="page-footer__connection-item">
+          <a class="page-footer__connection-mail" href="mailto:puteshestviemechta@gmail.ru"
+            aria-label="Электронная почта веломагазина MOON">
+            <svg class="page-footer__phone-icon" width="26" height="20">
+              <use xlink:href="img/icons/sprite.svg#mail"></use>
+            </svg>
+            <p>puteshestviemechta@gmail.ru</p>
+          </a>
+        </li>
+        <li class="page-footer__connection-item">
+          <a class="page-footer__connection-phone" href="tel:+749978468446" aria-label="Телефон веломагазина MOON">
+            <svg class="page-footer__phone-icon" width="21" height="23">
+              <use xlink:href="img/icons/sprite.svg#phone"></use>
+            </svg>
+            <p>+7 (499) -784-684-46</p>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+  </footer>
+  <script src="./js/script.min.js"></script>
 </body>
+
 </html>
