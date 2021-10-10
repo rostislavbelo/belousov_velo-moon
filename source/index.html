@@ -13,44 +13,66 @@
   <link rel="preload" href="./fonts/open-sans-v26-latin_cyrillic-700.woff" as="font" type="font/woff" crossorigin>
 </head>
 
-<body class="page-body">
+<body class="page-body page-body__remote">
   <header class="page-header">
-    <div class="page-header__logo-container">
-      <a class="page-header__logo" href="#">
-        <svg class="page-header__logo-img" width="57" height="22" aria-label="Логотип">
-          <use xlink:href="img/sprite.svg#logo-way"></use>
-        </svg>
-      </a>
+    <div class="page-header__wrapper">
+      <nav class="main-nav mobile-menu">
+        <button
+          class="main-nav__mobile-menu mobile-menu__button mobile-menu__button--active mobile-menu__button--hidden"
+          type="button" aria-label="Открыть/Закрыть меню сайта">
+          <span class="mobile-menu__element"></span>
+          <span class="mobile-menu__element"></span>
+          <span class="mobile-menu__element"></span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list mobile-menu__items mobile-menu__items--active">
+            <li class="main-nav__item">
+              <a class="main-nav__item-content main-nav__item-content--active" href="#about">О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-content" href="#species">Виды велосипедов</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-content" href="#video">Видео про велосипеды</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-content" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="page-header__main-info">
+        <h1 class="visually-hidden">Спортивный магазин велосипедов MOON</h1>
+        <div class="page-header__info">
+          <div class="page-header__logo-container">
+            <a class="page-header__logo">
+              <svg width="68" height="20" aria-label="Логотип веломагазина MOON">
+                <use xlink:href="img/icons/sprite.svg#logo-moon"></use>
+              </svg>
+            </a>
+          </div>
+          <p>Мы продаем велосипеды</p>
+          <span>Наш магазин отбирает только самые лучшие велосипеды для продажи</span>
+        </div>
+        <form class="page-header__fotm input input__header" action="https://echo.htmlacademy.ru" method="post">
+          <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+          <input type="text" name="name" id="name" placeholder="Введите Ваше Имя" required
+            pattern="[A-Za-zА-Яа-яЁё]{1,50}" title="Ваше имя русскими или латинскими буквами">
+          <label class="visually-hidden" for="name">Поле ввода имени</label>
+
+          <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" required
+            pattern="[0-9]{7,10}" title="Введите от 7 до 10 цифр Вашего номера">
+          <label class="visually-hidden" for="phone">Поле ввода телефона</label>
+
+          <button class="page-header__button" type="submit">Подобрать велосипед мечты</button>
+        </form>
+      </section>
     </div>
-    <nav class="main-nav mobile-menu">
-      <button class="main-nav__mobile-menu mobile-menu__button mobile-menu__button--active" type="button"
-        aria-label="Открыть/Закрыть меню сайта">
-        <span class="mobile-menu__element"></span>
-        <span class="mobile-menu__element"></span>
-        <span class="mobile-menu__element"></span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list mobile-menu__elements mobile-menu__elements--active">
-          <li class="main-nav__item">
-            <a class="main-nav__item-content main-nav__item-content--active" href="#">О нас</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-content" href="#species">Виды велосипедов</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-content" href="#video">Видео про велосипеды</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-content" href="#contacts">Контакты</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
   </header>
   <main class="page-main">
   </main>
   <footer class="page-footer">
-    <div class="page-footer__address">
+    <div class="page-footer__address" id="contacts">
       <h3>Как нас найти?</h3>
       <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <picture>
@@ -93,7 +115,7 @@
     </div>
 
   </footer>
-  <script src="./js/script.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,8 @@
+.page-body {
+  margin: 0;
+}
+
+.page-body__remote--no-scroll {
+  position: fixed;
+  overflow-y: scroll;
+}
