@@ -18,7 +18,11 @@
   }
 
   &:hover {
-    border: 1px solid #0ad9c6;
+    border-color: #0ad9c6;
+  }
+
+  &:focus {
+    outline-color: #0ad9c6;
   }
 }
 

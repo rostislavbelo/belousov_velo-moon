@@ -33,9 +33,9 @@
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
-      width: 1440px;
       background: url("../img/bike-desktop@2x.jpg") no-repeat;
-      background-size: 100%;
+      background-position: center;
+      background-size: 1440px 825px;
     }
   }
 }

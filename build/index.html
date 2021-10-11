@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Веломагазин преподобный MOON</title>
   <link href="css/style.min.css" rel="stylesheet">
-  <link rel="preload" href="./fonts/open-sans-v26-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="preload" href="./fonts/open-sans-v26-latin_cyrillic-regular.woff" as="font" type="font/woff" crossorigin="">
+  <link rel="preload" href="./fonts/open-sans-v26-latin_cyrillic-400.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="./fonts/open-sans-v26-latin_cyrillic-400.woff" as="font" type="font/woff" crossorigin="">
   <link rel="preload" href="./fonts/open-sans-v26-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="./fonts/open-sans-v26-latin_cyrillic-700.woff" as="font" type="font/woff" crossorigin="">
 </head>
@@ -57,7 +57,7 @@
           <input type="text" name="name" id="name" placeholder="Введите Ваше Имя" required="" pattern="[A-Za-zА-Яа-яЁё]{1,50}" title="Ваше имя русскими или латинскими буквами">
           <label class="visually-hidden" for="name">Поле ввода имени</label>
 
-          <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" required="" pattern="[0-9]{7,10}" title="Введите от 7 до 10 цифр Вашего номера">
+          <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" required="" pattern="[0-9-)-(]{7,10}" title="Введите от 7 до 10 цифр Вашего номера">
           <label class="visually-hidden" for="phone">Поле ввода телефона</label>
 
           <button class="page-header__button" type="submit">Подобрать велосипед мечты</button>
@@ -69,8 +69,9 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__address" id="contacts">
-      <h3>Как нас найти?</h3>
-      <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+      <h3 class="visually-hidden">Адрес веломагазина MOON</h3>
+      <h4>Как нас найти?</h4>
+      <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная,&nbsp;д.&nbsp;19</p>
       <picture>
         <source type="image/webp" media="(min-width: 1024px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
         <source type="image/webp" media="(min-width: 767px)" srcset="img/tablet/map-tablet@1x.webp 1x, img/tablet/map-tablet@2x.webp 2x">
@@ -84,17 +85,16 @@
     </div>
     <div class="page-footer__connection">
       <ul class="page-footer__connection-list">
-
         <li class="page-footer__connection-item">
-          <a class="page-footer__connection-mail" href="mailto:puteshestviemechta@gmail.ru" aria-label="Электронная почта веломагазина MOON">
-            <svg class="page-footer__phone-icon" width="26" height="20">
+          <a class="page-footer__connection-content page-footer__connection-mail" href="mailto:puteshestviemechta@gmail.ru" aria-label="Электронная почта веломагазина MOON">
+            <svg class="page-footer__mail-icon" width="26" height="20">
               <use xlink:href="img/icons/sprite.svg#mail"></use>
             </svg>
             <p>puteshestviemechta@gmail.ru</p>
           </a>
         </li>
         <li class="page-footer__connection-item">
-          <a class="page-footer__connection-phone" href="tel:+749978468446" aria-label="Телефон веломагазина MOON">
+          <a class="page-footer__connection-content page-footer__connection-phone" href="tel:+749978468446" aria-label="Телефон веломагазина MOON">
             <svg class="page-footer__phone-icon" width="21" height="23">
               <use xlink:href="img/icons/sprite.svg#phone"></use>
             </svg>
