@@ -1,0 +1,207 @@
+.about {
+  margin: 0 0 100px 0;
+}
+
+.about p {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  color: #1F1F1F;
+  text-align: center;
+  margin: 0 0 105px 0;
+}
+
+.about__list {
+  padding: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  counter-reset: flag;
+  column-gap: 48px;
+  row-gap: 96px;
+}
+
+.about__item {
+  width: calc(1vw * (253 / (1440 / 100)));
+  max-width: 253px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: -46px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -1.27273px;
+    color: #0AD9C6;
+    content: "0"counter(flag);
+    counter-increment: flag;
+    line-height: 20px;
+  }
+}
+
+.about__item p {
+  margin: 0 0 0 0;
+  text-align: center;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #000000;
+
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    font-size: calc(18px + (22 - 18) * ((100vw - 1024px) / (1440 - 1024)));
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .about {
+    margin: 0 0 100px 0;
+  }
+
+  .about p {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 41px;
+    letter-spacing: -0.005em;
+    color: #1F1F1F;
+    text-align: center;
+    margin: 0 0 85px 0;
+  }
+
+  .about__list {
+    padding: 0 30px;
+    max-width: 100%;
+    margin: 0 auto;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    counter-reset: flag;
+    column-gap: 31px;
+    row-gap: 96px;
+  }
+
+  .about__item {
+    width: calc(1vw * (263 / (767 / 100)));
+    max-width: 300px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: -46px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 38px;
+      letter-spacing: -1.27273px;
+      color: #0AD9C6;
+      content: "0"counter(flag);
+      counter-increment: flag;
+      line-height: 20px;
+
+    }
+  }
+
+  .about__item p {
+    margin: 0 0 0 0;
+    text-align: center;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #000000;
+
+    @media (min-width: 1024px) and (max-width: 1440px) {
+      font-size: calc(18px + (22 - 18) * ((100vw - 1024px) / (1440 - 1024)));
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about {
+    margin: 0 0 100px 0;
+  }
+
+  .about p {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 41px;
+    letter-spacing: -0.005em;
+    color: #1F1F1F;
+    text-align: center;
+    margin: 0 0 85px 0;
+  }
+
+  .about__list {
+    padding: 0 30px;
+    max-width: 100%;
+    margin: 0 auto;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    counter-reset: flag;
+    column-gap: 31px;
+    row-gap: unset;
+  }
+
+  .about__item {
+    width: 100%;
+    max-width: unset;
+    position: relative;
+    margin-bottom: 84px;
+
+    &::after {
+      position: absolute;
+      top: -46px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 38px;
+      letter-spacing: -1.27273px;
+      color: #0AD9C6;
+      content: "0"counter(flag);
+      counter-increment: flag;
+      line-height: 20px;
+    }
+  }
+
+  .about__item:nth-child(2n) {
+    margin-bottom: 92px;
+  }
+
+  .about__item:nth-child(3n) {
+    margin-bottom: 94px;
+  }
+
+  .about__item:not(:nth-child(1))::after {
+    top: -38px;
+  }
+
+  .about__item p {
+    max-width: 290px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #000000;
+
+    @media (min-width: 1024px) and (max-width: 1440px) {
+      font-size: calc(18px + (22 - 18) * ((100vw - 1024px) / (1440 - 1024)));
+    }
+  }
+}
