@@ -21,8 +21,8 @@ const startMobileMenu = function () {
   itemMenu.forEach(function (item) {
     item.addEventListener("click", function () {
       body.classList.remove("page-body--no-scroll");
-      setTimeout(function () { buttonMenu.classList.remove("mobile-menu__button--active") }, 500);
-      setTimeout(function () { menuActivate.classList.remove("mobile-menu__items--active") }, 500);
+      buttonMenu.classList.remove("mobile-menu__button--active");
+      menuActivate.classList.remove("mobile-menu__items--active");
     })
   });
 }
