@@ -5,12 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Веломагазин преподобный MOON">
   <title>HTML Academy: Веломагазин преподобный MOON</title>
   <link href="css/style.min.css" rel="stylesheet">
-  <link rel="preload" href="./fonts/open-sans-v26-latin_cyrillic-400.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="preload" href="./fonts/open-sans-v26-latin_cyrillic-400.woff" as="font" type="font/woff" crossorigin="">
-  <link rel="preload" href="./fonts/open-sans-v26-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="preload" href="./fonts/open-sans-v26-latin_cyrillic-700.woff" as="font" type="font/woff" crossorigin="">
+  <link rel="preload" href="./fonts/open-sans-v26-latin_cyrillic-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/open-sans-v26-latin_cyrillic-400.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/open-sans-v26-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/open-sans-v26-latin_cyrillic-700.woff" as="font" type="font/woff" crossorigin="anonymous">
 </head>
 
 <body class="page-body">
@@ -39,7 +40,7 @@
           </ul>
         </div>
       </nav>
-      <section class="page-header__main-info input">
+      <section class="page-header__main-info input mobile-hidden">
         <h1 class="visually-hidden">Спортивный магазин велосипедов MOON</h1>
         <div class="page-header__info">
           <div class="page-header__logo-container">
@@ -57,7 +58,7 @@
           <input type="text" name="name" id="name" placeholder="Введите Ваше Имя" required="" pattern="[A-Za-zА-Яа-яЁё]{1,50}" title="Ваше имя русскими или латинскими буквами">
           <label class="visually-hidden" for="name">Поле ввода имени</label>
 
-          <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" required="" pattern="[0-9-)-(]{7,10}" title="Введите от 7 до 10 цифр Вашего номера">
+          <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" required="" pattern="[0-9/(/)/+/\s-]{7,20}" title="Введите от 7 до 20 цифр">
           <label class="visually-hidden" for="phone">Поле ввода телефона</label>
 
           <button class="page-header__button" type="submit">Подобрать велосипед мечты</button>
@@ -65,7 +66,7 @@
       </section>
     </div>
   </header>
-  <main class="page-main">
+  <main class="page-main mobile-hidden">
     <section class="about" id="about">
       <h2 class="visually-hidden">Преимущества веломагазина MOON</h2>
       <p>Несколько фактов о нас</p>
@@ -87,56 +88,79 @@
     <section class="species" id="species">
       <h2>Виды велосипедов</h2>
       <ul class="species__list">
-        <li class="species__item species__item-road">
-          <picture>
-            <source type="image/webp" media="(max-width: 1023px)" srcset="/img/tablet/road-bike-tablet@1x.webp 1x, /img/tablet/road-bike-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="/img/road-bike-desktop@1x.webp 1x, /img/road-bike-desktop@2x.webp 2x">
+        <li class="species__item">
+          <div class="species__item-content">
+            <picture>
+              <source type="image/webp" media="(max-width: 1023px)" srcset="/img/tablet/road-bike-tablet@1x.webp 1x, /img/tablet/road-bike-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="/img/road-bike-desktop@1x.webp 1x, /img/road-bike-desktop@2x.webp 2x">
 
-            <source media="(max-width: 1023px)" srcset="/img/tablet/road-bike-tablet@1x.jpg 1x, /img/tablet/road-bike-tablet@2x.jpg 2x">
+              <source media="(max-width: 1023px)" srcset="/img/tablet/road-bike-tablet@1x.jpg 1x, /img/tablet/road-bike-tablet@2x.jpg 2x">
 
-            <img src="/img/road-bike-desktop@1x.jpg" srcset="/img/road-bike-desktop@2x.jpg 2x" width="342" height="503" alt="Изображение дорожного велосипеда">
-          </picture>
+              <img src="/img/road-bike-desktop@1x.jpg" srcset="/img/road-bike-desktop@2x.jpg 2x" width="342" height="503" alt="Изображение дорожного велосипеда" loading="lazy">
+            </picture>
+          </div>
           <p>Дорожный велосипед</p>
         </li>
-        <li class="species__item species__item-mount">
-          <picture>
-            <source type="image/webp" media="(max-width: 1023px)" srcset="/img/tablet/mount-bike-tablet@1x.webp 1x, /img/tablet/mount-bike-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="/img/mount-bike-desktop@1x.webp 1x, /img/mount-bike-desktop@2x.webp 2x">
+        <li class="species__item">
+          <div class="species__item-content">
+            <picture>
+              <source type="image/webp" media="(max-width: 1023px)" srcset="/img/tablet/mount-bike-tablet@1x.webp 1x, /img/tablet/mount-bike-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="/img/mount-bike-desktop@1x.webp 1x, /img/mount-bike-desktop@2x.webp 2x">
 
-            <source media="(max-width: 1023px)" srcset="/img/tablet/mount-bike-tablet@1x.jpg 1x, /img/tablet/mount-bike-tablet@2x.jpg 2x">
+              <source media="(max-width: 1023px)" srcset="/img/tablet/mount-bike-tablet@1x.jpg 1x, /img/tablet/mount-bike-tablet@2x.jpg 2x">
 
-            <img src="/img/mount-bike-desktop@1x.jpg" srcset="/img/mount-bike-desktop@2x.jpg 2x" width="342" height="566" alt="Изображение горного велосипеда">
-          </picture>
+              <img src="/img/mount-bike-desktop@1x.jpg" srcset="/img/mount-bike-desktop@2x.jpg 2x" width="342" height="566" alt="Изображение горного велосипеда" loading="lazy">
+            </picture>
+          </div>
           <p>Горный велосипед</p>
         </li>
         <li class="species__item">
-          <picture>
-            <source type="image/webp" media="(max-width: 1023px)" srcset="/img/tablet/child-bike-tablet@1x.webp 1x, /img/tablet/child-bike-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="/img/child-bike-desktop@1x.webp 1x, /img/child-bike-desktop@2x.webp 2x">
+          <div class="species__item-content">
+            <picture>
+              <source type="image/webp" media="(max-width: 1023px)" srcset="/img/tablet/child-bike-tablet@1x.webp 1x, /img/tablet/child-bike-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="/img/child-bike-desktop@1x.webp 1x, /img/child-bike-desktop@2x.webp 2x">
 
-            <source media="(max-width: 1023px)" srcset="/img/tablet/child-bike-tablet@1x.jpg 1x, /img/tablet/child-bike-tablet@2x.jpg 2x">
+              <source media="(max-width: 1023px)" srcset="/img/tablet/child-bike-tablet@1x.jpg 1x, /img/tablet/child-bike-tablet@2x.jpg 2x">
 
-            <img src="/img/child-bike-desktop@1x.jpg" srcset="/img/child-bike-desktop@2x.jpg 2x" width="342" height="513" alt="Изображение детского велосипеда">
-          </picture>
+              <img src="/img/child-bike-desktop@1x.jpg" srcset="/img/child-bike-desktop@2x.jpg 2x" width="342" height="513" alt="Изображение детского велосипеда" loading="lazy">
+            </picture>
+          </div>
           <p>Детский велосипед</p>
         </li>
       </ul>
     </section>
+    <section class="video" id="video">
+      <h2>Видео про велосипеды</h2>
+      <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+      <div class="video__container-1">
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="/img/mobile/bike-for-video-mobile@1x.webp 1x, /img/mobile/bike-for-video-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1023px)" srcset="/img/tablet/bike-for-video-tablet@1x.webp 1x, /img/tablet/bike-for-video-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="/img/bike-for-video-desktop@1x.webp 1x, /img/bike-for-video-desktop@2x.webp 2x">
+
+          <source media="(max-width: 767px)" srcset="/img/mobile/bike-for-video-mobile@1x.jpg 1x, /img/mobile/bike-for-video-mobile@2x.jpg 2x">
+          <source media="(max-width: 1023px)" srcset="/img/tablet/bike-for-video-tablet@1x.jpg 1x, /img/tablet/bike-for-video-tablet@2x.jpg 2x">
+
+          <img src="/img/bike-for-video-desktop@1x.jpg" srcset="/img/bike-for-video-desktop@2x.jpg 2x" width="929" height="522" alt="Видеоролик про велосипеды" loading="lazy">
+        </picture>
+        <button class="video__button" type="button" aria-label="Включить видеоролик"></button>
+      </div>
+    </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer mobile-hidden">
     <div class="page-footer__address" id="contacts">
       <h3 class="visually-hidden">Адрес веломагазина MOON</h3>
       <h4>Как нас найти?</h4>
       <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная,&nbsp;д.&nbsp;19</p>
       <picture>
-        <source type="image/webp" media="(min-width: 1024px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/map-tablet@1x.webp 1x, img/tablet/map-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/mobile/map-mobile@1x.webp 1x, img/mobile/map-mobile@2x.webp 2x">
+        <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/map-mobile@1x.webp 1x, img/mobile/map-mobile@2x.webp 2x">
+        <source type="image/webp" media="(max-width: 1023px)" srcset="img/tablet/map-tablet@1x.webp 1x, img/tablet/map-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
 
-        <source media="(min-width: 1024px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-        <source media="(min-width: 767px)" srcset="img/tablet/map-tablet@1x.jpg 1x, img/tablet/map-tablet@1x.jpg 2x">
+        <source media="(max-width: 767px)" srcset="/img/mobile/map-mobile@1x.jpg 1x, /img/mobile/map-mobile@2x.jpg 2x">
+        <source media="(max-width: 1023px)" srcset="/img/tablet/map-tablet@1x.jpg 1x, /img/tablet/map-tablet@1x.jpg 2x">
 
-        <img src="/img/mobile/map-mobile@1x.jpg" srcset="/img/mobile/map-mobile@1x.jpg 1x, /img/mobile/map-mobile@2x.jpg 2x" width="320" height="250" alt="Магазин Moon на карте города">
+        <img src="img/map-desktop@1x.jpg" srcset="img/map-desktop@2x.jpg 2x" width="957" height="530" alt="Магазин Moon на карте Санкт-Петербурга">
       </picture>
     </div>
     <div class="page-footer__connection">
@@ -157,10 +181,8 @@
             <p>+7 (499) -784-684-46</p>
           </a>
         </li>
-
       </ul>
     </div>
-
   </footer>
   <script src="./js/script.js"></script>
 </body>

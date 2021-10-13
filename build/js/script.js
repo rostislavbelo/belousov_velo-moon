@@ -1,7 +1,7 @@
 const startMobileMenu = function () {
   const buttonMenu = document.querySelector(".mobile-menu__button");
   const menuActivate = document.querySelector(".mobile-menu__items");
-  const body = document.querySelector(".page-body");
+  const hidden = document.querySelectorAll(".mobile-hidden");
   const itemMenu = document.querySelectorAll(".main-nav__item-content")
 
 
@@ -14,13 +14,19 @@ const startMobileMenu = function () {
     buttonMenu.addEventListener("click", function () {
       menuActivate.classList.toggle("mobile-menu__items--active");
       buttonMenu.classList.toggle("mobile-menu__button--active");
-      body.classList.toggle("page-body--no-scroll");
-    });
+
+      hidden.forEach(function (el) {
+        el.classList.toggle("visually-hidden");
+      });
+    })
   };
 
   itemMenu.forEach(function (item) {
     item.addEventListener("click", function () {
-      body.classList.remove("page-body--no-scroll");
+      hidden.forEach(function (el) {
+        el.classList.remove("visually-hidden");
+      });
+
       buttonMenu.classList.remove("mobile-menu__button--active");
       menuActivate.classList.remove("mobile-menu__items--active");
     })

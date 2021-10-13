@@ -1,0 +1,227 @@
+.video {
+  margin: 0 0 249px 0;
+  padding: 120px 0 480px 0;
+  width: 100%;
+  min-height: 76px;
+  background-color: #131314;
+  position: relative;
+}
+
+.video h2 {
+  margin: 0 auto 19px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+  text-align: center;
+  max-width: 700px;
+}
+
+.video p {
+  margin: 0 0 0 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+  opacity: 0.7;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.video__container-1 {
+  width: 929px;
+  min-height: 522px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -109px;
+}
+
+.video__container-1 img {
+  width: 100%;
+  height: 522px;
+}
+
+.video__button {
+  display: block;
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: #0AD9C6 url("/img/icons/play-icon.svg") no-repeat;
+  background-position: 55% 50%;
+  background-size: 13px 18px;
+  border: none;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-57%);
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(10, 217, 198, 0.95);
+    width: 66.5px;
+    height: 66.5px;
+  }
+
+  &:focus {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .video {
+    margin: 0 0 157px 0;
+    padding: 70px 0 calc(1vw * 237 / (768 / 100)) 0;
+    width: 100%;
+    min-height: 76px;
+    background-color: #131314;
+    position: relative;
+  }
+
+  .video h2 {
+    margin: 0 auto 19px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+    text-align: center;
+    max-width: 500px;
+  }
+
+  .video p {
+    margin-left: calc(1vw * 170 / (768 / 100));
+    margin-right: calc(1vw * 170 / (768 / 100));
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+    opacity: 0.7;
+    max-width: 580px;
+  }
+
+  .video__container-1 {
+    width: calc(1vw * 503 / (768 / 100));
+    height: calc(1vw * 282 / (768 / 100));
+    min-height: unset;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -86px;
+  }
+
+  .video__container-1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .video__button {
+    display: block;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #0AD9C6 url("/img/icons/play-icon.svg") no-repeat;
+    background-position: 55% 50%;
+    background-size: 20px 25px;
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(10, 217, 198, 0.95);
+      width: 91.5px;
+      height: 91.5px;
+    }
+
+    &:focus {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .video {
+    margin: 0 0 119px;
+    padding: 84px 0 calc(1vw * 168 / (320 / 100)) 0;
+    width: 100%;
+    min-height: 76px;
+    background-color: #131314;
+    position: relative;
+  }
+
+  .video h2 {
+    margin: 0 auto 19px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+    text-align: center;
+    max-width: 500px;
+  }
+
+  .video p {
+    margin-left: calc(1vw * 16 / (320 / 100));
+    margin-right: calc(1vw * 16 / (320 / 100));
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+    opacity: 0.7;
+    max-width: 580px;
+  }
+
+  .video__container-1 {
+    width: calc(1vw * 288 / (320 / 100));
+    height: calc(1vw * 162 / (320 / 100));
+    min-height: unset;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -49px;
+  }
+
+  .video__container-1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .video__button {
+    display: block;
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #0AD9C6 url("/img/icons/play-icon.svg") no-repeat;
+    background-position: 55% 50%;
+    background-size: 14px 25px;
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(10, 217, 198, 0.95);
+      width: 66.5px;
+      height: 66.5px;
+    }
+
+    &:focus {
+      width: 65px;
+      height: 65px;
+    }
+  }
+}
