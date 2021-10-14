@@ -68,6 +68,7 @@
   }
 
   .main-nav__item {
+    min-width: 320px;
     width: 100vw;
     min-height: 60px;
     background: #F6F6F6;
@@ -105,6 +106,13 @@
       border-right: 2px solid rgba(44, 46, 63, 0.5);
       box-sizing: border-box;
       mix-blend-mode: normal;
+    }
+
+    &:hover {
+      color: #0AD9C6;
+      box-shadow:
+        inset 0px 11px 15px -10px #0AD9C6,
+        inset 0px -11px 15px -10px #0AD9C6;
     }
 
     &:hover::before {
