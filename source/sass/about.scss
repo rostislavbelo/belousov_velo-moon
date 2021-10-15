@@ -7,7 +7,7 @@
   font-size: 30px;
   line-height: 30px;
   letter-spacing: -0.005em;
-  color: #1F1F1F;
+  color: #1f1f1f;
   text-align: center;
   margin: 0 auto 105px;
   max-width: 90%;
@@ -38,9 +38,8 @@
     transform: translateX(-50%);
     font-weight: bold;
     font-size: 28px;
-    line-height: 38px;
     letter-spacing: -1.27273px;
-    color: #0AD9C6;
+    color: #0ad9c6;
     content: "0"counter(flag);
     counter-increment: flag;
     line-height: 20px;
@@ -49,7 +48,6 @@
 
 .about__item p {
   margin: 0 auto;
-  text-align: center;
   font-weight: normal;
   font-size: 22px;
   line-height: 34px;
@@ -73,7 +71,7 @@
     font-size: 24px;
     line-height: 41px;
     letter-spacing: -0.005em;
-    color: #1F1F1F;
+    color: #1f1f1f;
     text-align: center;
     margin: 0 auto 85px;
     max-width: 90%;
@@ -92,7 +90,7 @@
   }
 
   .about__item {
-    width: calc(1vw * (253 / (767/100)));
+    width: calc(1vw * (253 / (767 / 100)));
     position: relative;
     max-width: 310px;
 
@@ -103,9 +101,8 @@
       transform: translateX(-50%);
       font-weight: bold;
       font-size: 28px;
-      line-height: 38px;
       letter-spacing: -1.27273px;
-      color: #0AD9C6;
+      color: #0ad9c6;
       content: "0"counter(flag);
       counter-increment: flag;
       line-height: 20px;
@@ -114,7 +111,6 @@
 
   .about__item p {
     margin: 0 auto;
-    text-align: center;
     font-weight: normal;
     font-size: 22px;
     line-height: 34px;
@@ -135,7 +131,7 @@
     font-size: 24px;
     line-height: 41px;
     letter-spacing: -0.005em;
-    color: #1F1F1F;
+    color: #1f1f1f;
     text-align: center;
     margin: 0 auto 85px;
     max-width: 93%;
@@ -167,9 +163,8 @@
       transform: translateX(-50%);
       font-weight: bold;
       font-size: 28px;
-      line-height: 38px;
       letter-spacing: -1.27273px;
-      color: #0AD9C6;
+      color: #0ad9c6;
       content: "0"counter(flag);
       counter-increment: flag;
       line-height: 20px;
@@ -195,7 +190,6 @@
   .about__item p {
     max-width: 290px;
     margin: 0 auto;
-    text-align: center;
     font-weight: normal;
     font-size: 18px;
     line-height: 34px;
