@@ -28,11 +28,11 @@
   }
 
   &:hover .mobile-menu__element {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #dadada;
   }
 
   &:focus .mobile-menu__element {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
   }
 
   .mobile-menu__element:nth-child(3) {
