@@ -26,17 +26,17 @@
 
 .species__list {
   margin: 0 auto;
-  padding: 0;
+  padding: 0 0 0 50px;
   max-width: 1440px;
   list-style-type: none;
   display: flex;
   justify-content: center;
-  column-gap: 50px;
+  // column-gap: 50px;
   flex-wrap: wrap;
 }
 
 .species__item {
-  margin: 0 0 70px 0;
+  margin: 0 50px 70px 0;
   position: relative;
   width: 342px;
 
@@ -187,17 +187,17 @@
 
   .species__list {
     margin: 0 auto;
-    padding: 0;
+    padding: 0 0 0 50px;
     max-width: 90%;
     list-style-type: none;
     display: flex;
     justify-content: center;
-    column-gap: 50px;
+    //column-gap: 50px;
     flex-wrap: wrap;
   }
 
   .species__item {
-    margin: 0 0 50px 0;
+    margin: 0 50px 50px 0;
     position: relative;
     width: calc(1vw * 270 / (768 / 100));
   }
@@ -320,13 +320,18 @@
   }
 
   .species__item-content {
-    width: calc(1vw * 270 / (320 / 100));
+    width: clamp(270px, calc(1vw * 270 / (320 / 100)), 540px);
+    margin: 0 auto 21px;
   }
 
   .species__item:nth-child(3n+1) .species__item-content,
   .species__item:nth-child(3n-1) .species__item-content,
   .species__item:nth-child(3n) .species__item-content {
-    height: calc(1vw * 300 / (320 / 100));
+    height: clamp(300px, calc(1vw * 300 / (320 / 100)), 600px);
+  }
+
+  .species__item img {
+    border-radius: 9px;
   }
 
   .species__item:nth-child(3n+1) .species__item-content::before {

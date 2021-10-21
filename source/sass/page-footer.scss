@@ -53,10 +53,10 @@
 .page-footer__connection-list {
   padding: 0;
   margin: 0 auto;
-  max-width: 565px;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  max-width: 957px;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
   list-style-type: none;
   column-gap: 91px;
 }
@@ -156,11 +156,7 @@
   }
 
   .page-footer__connection-list {
-    padding: 0;
-    margin: 0 auto;
-    max-width: 7500px;
-    justify-content: center;
-    list-style-type: none;
+    max-width: 698px;
     column-gap: 92px;
   }
 

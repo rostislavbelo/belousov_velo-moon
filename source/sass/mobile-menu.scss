@@ -22,13 +22,17 @@
     display: block;
     height: 1px;
     width: 23px;
-    background-color: #dadada;
+    background-color: #000000;
     margin-bottom: 5.5px;
     transition: 0.2s all;
   }
 
   &:hover .mobile-menu__element {
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  &:focus .mobile-menu__element {
+    background-color: rgba(0, 0, 0, 0.2);
   }
 
   .mobile-menu__element:nth-child(3) {
