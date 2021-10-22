@@ -318,16 +318,16 @@
   }
 
   .species__item-content {
-    width: calc(1vw * (270 / (320 / 100)) * 0.6);
-    min-width: 270px;
+    width: calc(1vw * (270 / (320 / 100)));
+    max-width: calc(270px * 1.33);
     margin: 0 auto 21px;
   }
 
   .species__item:nth-child(3n+1) .species__item-content,
   .species__item:nth-child(3n-1) .species__item-content,
   .species__item:nth-child(3n) .species__item-content {
-    height: calc(1vw * (300 / (320 / 100)) * 0.6);
-    min-height: 300px;
+    height: calc(1vw * (300 / (320 / 100)));
+    max-height: calc(300px * 1.33);
   }
 
   .species__item img {
